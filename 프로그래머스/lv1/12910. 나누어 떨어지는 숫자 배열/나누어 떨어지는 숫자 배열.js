@@ -1,9 +1,5 @@
 function solution(arr, divisor) {
-    var answer = [];
-    arr.find((item) => item % divisor === 0) 
-    ? arr.filter((item) => item % divisor === 0 ? answer.push(item) : answer)
-    : answer.push(-1)
+    var answer = arr.filter((i) => i % divisor === 0 );
     
-    answer.sort((a,b) => a-b);
-    return answer;
+    return answer.length === 0 ? [-1] : answer.sort((a,b) => a-b);
 }
