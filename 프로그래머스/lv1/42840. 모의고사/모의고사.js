@@ -17,5 +17,5 @@ function solution(answers) {
     Math.max(a,b,c) === b ? answer.push(2) : answer;
     Math.max(a,b,c) === c ? answer.push(3) : answer;
     
-    return answer.sort((a,b) => a-b);
+    return answer;
 }
